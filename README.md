@@ -17,17 +17,17 @@
 ---
 
 ## 📂 Estrutura do Projeto
+```
 bankapi/
 ├─ src/
 │ ├─ main/java/com/estudo/bankapi/
 │ │ ├─ BankapiApplication.java
 │ │ ├─ TransferRequest.java
 │ │ ├─ TransferController.java
-│ │ └─ ...
 │ └─ main/resources/application.properties
 ├─ pom.xml
 └─ README.md
-
+```
 ---
 
 ## ⚙️ Pré-requisitos
