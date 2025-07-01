@@ -43,22 +43,31 @@ bankapi/
 1️⃣ Clone este repositório:
 ```bash
 git clone https://github.com/SEU_USUARIO/bankapi.git
+```
+```bash
 cd bankapi
+```
 2️⃣ Compile e instale as dependências:
+```bash
 mvn clean install
+```
 3️⃣ Inicie a API localmente:
+```bash
 mvn spring-boot:run
+```
 ✅ A aplicação estará rodando em http://localhost:8080.
 
 🔥 Como testar a API
 ➕ Criar uma transferência
 Faça um POST para /transfer com JSON como:
+```bash
 {
   "fromAccount": "123",
   "toAccount": "456",
   "amount": 500,
   "idempotencyKey": "algumakeyunica"
 }
+```
 Exemplo no Postman:
 
 URL: POST http://localhost:8080/transfer
@@ -69,11 +78,14 @@ Body: JSON acima.
 
 🔍 Consultar total de transações
 Faça um GET para /transfer/count:
+```bash
 curl http://localhost:8080/transfer/count
-
+```
 🧪 Executando os testes automatizados
 Dica: Deixe a API rodando (mvn spring-boot:run) em um terminal e execute em outro:
+```bash
 mvn test
+```
 ✅ Isso vai rodar testes automatizados com JUnit e RestAssured, verificando os endpoints da API.
 
 📚 O que você aprende com este projeto?
